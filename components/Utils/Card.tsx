@@ -27,7 +27,7 @@ export interface CardProps {
   /**
    * set the css
    */
-  css?: CSS,
+  css?: any,
   /**
    * Show the children elemnt
    */
