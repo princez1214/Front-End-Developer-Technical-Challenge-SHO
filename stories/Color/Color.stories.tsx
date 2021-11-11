@@ -10,7 +10,17 @@ export default {
   
 const Template: ComponentStory<typeof Color> = (args) => <Color {...args} />;
 
-export const ColorPanel = Template.bind({});
-ColorPanel.args = {
-  hex: "ff00ff"
+export const ColorRed = Template.bind({});
+ColorRed.args = {
+  hex: "ff0000"
+};
+
+export const ColorGreen = Template.bind({});
+ColorGreen.args = {
+  hex: "00ff00"
+};
+
+export const ColorBlue = Template.bind({});
+ColorBlue.args = {
+  hex: "0000ff"
 };

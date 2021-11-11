@@ -59,6 +59,7 @@ export const ColorInfo: React.FC<ColorInfoProps> = ({ type, value }: ColorInfoPr
       case 'default': 
         return newColorValue
     }
+    return ""
   }
 
   useEffect(() => {
