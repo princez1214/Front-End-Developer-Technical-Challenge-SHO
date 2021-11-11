@@ -1,6 +1,7 @@
 import Head from "next/head";
+import { Color } from "../components/Color";
 import styles from "../styles/Home.module.css";
-import { Button } from "../stories/Button";
+
 export default function Home(props: { label: string }) {
   return (
     <div className={styles.container}>
@@ -11,7 +12,7 @@ export default function Home(props: { label: string }) {
       </Head>
 
       <main className={styles.main}>
-        <Button label={props.label} color="primary" size="large"></Button>
+        <Color hex="ff00ff"/>
       </main>
     </div>
   );
