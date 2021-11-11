@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNameThatColor } from 'react-ntc';
 import { Text } from '../Utils/Text';
 import { Box } from '../Utils/Box';
 
@@ -18,6 +19,7 @@ export interface ColorInfoProps extends ColorType {
 
 export const ColorInfo: React.FC<ColorInfoProps> = ({ type, value }: ColorInfoProps) => {
   const [colorValue, setColorValue] = useState('');
+  const colorName = useNameThatColor(`#${value}`)
 
   const changeColorValue: Function = (colorType: ColorType, colorValue: string): string => {  
     let newColorValue: string = colorValue;
@@ -53,7 +55,7 @@ export const ColorInfo: React.FC<ColorInfoProps> = ({ type, value }: ColorInfoPr
         
         return `${c}-${m}-${y}-${k}` 
       case 'Pantone':
-        return newColorValue;
+        return colorName;
       case 'default': 
         return newColorValue
     }
