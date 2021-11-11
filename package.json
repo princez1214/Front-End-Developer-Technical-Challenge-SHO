@@ -13,7 +13,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@stitches/react": "1.2.5",
+    "@stitches/react": "^1.2.5",
     "@types/wcag-contrast": "^3.0.0",
     "next": "11.0.1",
     "react": "17.0.2",
